@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            background-image: url('file:///C:/Users/Dell/OneDrive/Desktop/website/back%20ground/b5.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            color: white;
+        }
+        .nav { margin: 20px; }
+        .nav button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        .gallery { display: none; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; }
+        .gallery img { width: 100%; height: auto; border-radius: 5px; }
+        .active { display: grid; }
+    </style>
+</head>
+<body>
+    <h1>My Works</h1>
+    <div class="nav">
+        <button onclick="showGallery('traditional')">Traditional and Spiritual Works</button>
+        <button onclick="showGallery('modern')">Modern and Western Works</button>
+    </div>
+    
+    <div id="traditional" class="gallery active">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%201.PNG" alt="Traditional Work 1">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%203.PNG" alt="Traditional Work 2">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%202.PNG" alt="Traditional Work 3">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%204.PNG" alt="Traditional Work 4">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%205.PNG" alt="Traditional Work 5">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%206.PNG" alt="Traditional Work 6">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%207.PNG" alt="Traditional Work 7">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/tratitonal%20work/work%208.PNG" alt="Traditional Work 8">
+    </div>
+    
+    <div id="modern" class="gallery">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/work%201.PNG" alt="Modern Work 1">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/w%20work%202.PNG" alt="Modern Work 2">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/w%20work%203.PNG" alt="Modern Work 3">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/work%204.PNG" alt="Modern Work 4">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/w%20work%205.PNG" alt="Modern Work 5">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/w%20work%206.PNG" alt="Modern Work 6">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/w%20work%207.PNG" alt="Modern Work 7">
+        <img src="file:///C:/Users/Dell/OneDrive/Desktop/website/western%20works/w%20work%208.PNG" alt="Modern Work 8">
+    </div>
+    
+    <script>
+        function showGallery(category) {
+            document.getElementById('traditional').classList.remove('active');
+            document.getElementById('modern').classList.remove('active');
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+</body>
+</html>
